@@ -5,14 +5,18 @@ import { StyleSheet, Text, View, Platform } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Hi team!</Text>
+      <Text style={ {color:'#ff0'} }>Hi tedlkam!</Text>
       <StatusBar style="auto" />
     </View>
   );
 }
 const styles = StyleSheet.create({
-  AndroidSafeArea: {
-    paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0
-  }
+  container: {
+    flex:1,
+    display:'flex',
+    justifyContent : 'center',
+    alignItems:'center',
+    backgroundColor: '#f00',
+  },
 });
 
