@@ -1,9 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View} from 'react-native';
-import { Navbar } from './src/Navbar.js';
-
-
+import { Navbar } from './Navbar';
 
 export default function App() {
   return (
@@ -14,6 +12,6 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  container: {}
+  container: {color:'red'}
 });
 
