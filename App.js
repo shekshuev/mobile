@@ -8,7 +8,7 @@ import { Navbar } from './src/Navbar';
 export default function App() {
   return (
     <View style={StyleSheet.container}>
-      <Navbar />
+      <Navbar></Navbar>
     </View>
   );
 }
