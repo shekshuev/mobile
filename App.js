@@ -10,12 +10,10 @@ export default function App() {
     <View style={StyleSheet.container}>
       <Navbar></Navbar>
     </View>
-  );
+  )
 }
 
 const styles = StyleSheet.create({
-  container: {
-    
-  },
+  container: {}
 });
 
