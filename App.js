@@ -1,12 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
+//import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View} from 'react-native';
-import { Navbar } from './Navbar';
+import {Navbar} from './src/Navbar';
 
 export default function App() {
   return (
-    <View style={StyleSheet.container}>
-      <Navbar></Navbar>
+    <View>
+      <Navbar title="Авторизация"></Navbar>
     </View>
   )
 }
