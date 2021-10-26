@@ -1,42 +1,49 @@
 import React from 'react'
-import {View, Text, StyleSheet, Button, Alert, Image, ImageBackground} from 'react-native'
+import {View, Text, StyleSheet, Button, Alert, Dimensions} from 'react-native'
 import { Navbar } from './service/Navbar';
 export const Start = props => {
     return (
-<View>
-    <Navbar title="Стартовая страница"></Navbar>
-    <View style={styles.main}>
-    <ImageBackground
-    source={require('../img/getting_started.png')}>
-    <Button 
-    title="Начать" 
-    style={styles.button}
-    accessibilityLabel="BUTTON_START"
-    color="green"
-    onPress={() => Alert.alert('Simple Button pressed')}
-    >
-    
-    </Button>
-    </ImageBackground>
-    <Text style={styles.text}>Нажимая кнопку "начать", 
-    вы подтверждаете свою готовность к анкетированию</Text>
-    
+<View style={styles.main}>
+<View style={styles.container}>
+        <Text style={styles.text}>Нажимая кнопку "начать", 
+        вы подтверждаете свою готовность к анкетированию</Text>
+        <View style={styles.button}>
+            <Button
+            color="#6495ED"
+            title="Начать" 
+            accessibilityLabel="BUTTON_START"
+            onPress={() => Alert.alert('Simple Button pressed')}
+            >
+            </Button>
+        </View>
     </View>
 </View>
     );
 }
+/*
 
+*/
 const styles = StyleSheet.create({
     main: {
-        width:'100%',
-        height:'90%',
+        position:'relative',
+        height:'100%',
+        color:'#000'
+    },
+    container: {
+        flex:1,
         justifyContent:'center',
         alignItems:'center',
-        backgroundColor:'lightgreen'
     },
     text: {
         fontSize:24,
         textAlign:'center',
-        padding:20
+        padding:30
     },
+      button: {
+        width:150,
+      },  
+      
 })
+
+// borderColor:'black',
+//         borderWidth:4

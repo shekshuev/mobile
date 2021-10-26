@@ -1,20 +1,18 @@
-//import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, Image} from 'react-native';
-import { Start } from './src/components/Start';
+import { GetDerivedStateFromProps } from 'react';
+import { StyleSheet, View, Fragment} from 'react-native';
+import { Navbar } from './src/components/service/Navbar';
+
 export default function App() {
+
   return (
-    <View style={styles.container}>
-      <Start></Start>
+    <View>
+     <Navbar></Navbar>
     </View>
   )
+
 }
 
 const styles = StyleSheet.create({
-  container: {
-             },
-  center: {
-
-  }
+ 
 });
-
